@@ -1,2 +1,6 @@
-Deploy/
-Host/
+/root/
+    .gitignore
+    /Deploy/
+        .gitignore
+        someFile3.txt
+        someFile4.txt
