@@ -1,0 +1,39 @@
+﻿@using Admin_MVC.Business.Dtos;
+@model LoginDto;
+
+
+@{
+    ViewData["Title"] = "Login";
+    
+}
+
+<style>
+    .card{
+        max-height: 200px;
+        max-width: 300px;
+        align-self: center;
+    }
+</style>
+
+<h1 class="d-flex justify-content-center">Login</h1>
+
+<form asp-action="Index" method="post" class="d-flex justify-content-center">
+    <div class="card">
+        <div class="row m-1">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control"/>
+            <span asp-validation-for="Email"></span>
+        </div>
+        <div class="row m-1">
+            <label asp-for="Senha" class="form-label"></label>
+            <input asp-for="Senha" class="form-control" type="password"/>
+            <span asp-validation-for="Senha"></span>
+        </div>
+        <div class="row m-3">
+            <hr />
+        </div>
+        <div class="row m-1">
+            <input value="Entrar" type="submit" class="btn btn-success"/>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,85 @@
+﻿@using System.Web;
+@using Microsoft.AspNetCore.Mvc;
+@using Admin_MVC.Business.Enums;
+
+@{
+    var isAcesso = false;
+    if (ViewBag.IsAcesso != null)
+        isAcesso = true;
+    var auth = Context.Request.Cookies["UserAuth"];
+    var userId = Convert.ToInt16(Context.Request.Cookies["UserId"]);
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empoderadas Admin</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Admin_MVC.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+        <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-light bg-white border-bottom box-shadow mb-3" >
+            <div class="container">
+                @{
+                    if (!isAcesso)
+                    {
+                        <a class="navbar-brand" asp-controller="Home" asp-action="Index">Empoderadas</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSuportedContent" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" id="navbarSuportedContent">
+                            <ul class="navbar-nav flex-grow-1">
+                                @if ((int)NivelAcessoEnum.Artista == Convert.ToInt16(auth))
+                                {
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-controller="Produto" asp-action="Index" asp-route-id="@userId">Produtos</a>
+                                    </li>
+                                }
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-controller="DadosDoUsuario" asp-action="index" asp-route-id="@userId">Dados do Usuário</a>
+                                </li>
+                                @if ((int)NivelAcessoEnum.Administrador == Convert.ToInt16(auth))
+                                {
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Admin
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item text-dark" asp-controller="Usuario" asp-action="Index">Usuários</a></li>
+                                            <li><a class="dropdown-item text-dark" asp-controller="Categoria" asp-action="Index">Categorias</a></li>
+                                            <li><a class="dropdown-item text-dark" asp-controller="Termo" asp-action="Index">Termos</a></li>
+                                        </ul>
+                                    </li>
+                                }
+                                <li class="nav-item float-right">
+                                    <a class="nav-link text-dark " asp-controller="Acesso" asp-action="Sair">Sair</a>
+                                </li>
+                            </ul>
+                        </div>
+                    }
+                }
+            </div>
+        </nav>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - Empoderadas
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

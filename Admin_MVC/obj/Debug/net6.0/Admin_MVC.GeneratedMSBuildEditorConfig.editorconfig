@@ -1,0 +1,120 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Admin_MVC
+build_property.RootNamespace = Admin_MVC
+build_property.ProjectDir = c:\Users\henri\OneDrive\Documentos\Programas\.NET\ProjetosF\Empoderadas\NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web\Admin_MVC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\henri\OneDrive\Documentos\Programas\.NET\ProjetosF\Empoderadas\NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web\Admin_MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Acesso/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNlc3NvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Categoria/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Categoria/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Categoria/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Categoria/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Categoria/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/DadosDoUsuario/AlterarSenha.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFkb3NEb1VzdWFyaW9cQWx0ZXJhclNlbmhhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/DadosDoUsuario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFkb3NEb1VzdWFyaW9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/DadosDoUsuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFkb3NEb1VzdWFyaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Produto/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Produto/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Produto/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Produto/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Produto/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Termo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybW9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Termo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Usuario/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Usuario/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Usuario/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Usuario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/henri/OneDrive/Documentos/Programas/.NET/ProjetosF/Empoderadas/NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web/Admin_MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bc3cnvgzc0

@@ -1,0 +1,47 @@
+@model Admin_MVC.Models.TermoData;
+
+@{
+    ViewData["Title"] = "Editar";
+
+}
+
+<h1>Editar Termos</h1>
+
+<hr />
+
+<form asp-action="Edit">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row p-1">
+        <div class="form-group">
+            <input asp-for="Id" type="hidden"/>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Sobre" class="control-label"></label>
+            <textarea asp-for="@Model.Sobre" class="form-control"></textarea>
+            <span asp-validation-for="@Model.Sobre" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.TermosDeUso" class="control-label">Termo De Uso</label>
+            <textarea asp-for="@Model.TermosDeUso" class="form-control"></textarea>
+            <span asp-validation-for="@Model.TermosDeUso" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.TermosDePrivacidade" class="control-label">Termo De Privacidade</label>
+            <textarea asp-for="@Model.TermosDePrivacidade" class="form-control"></textarea>
+            <span asp-validation-for="@Model.TermosDePrivacidade" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row p-3">
+        <hr/>
+    </div>
+    <div class="row p-1">
+        <div class="form-group col">
+            <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+            <input type="submit" value="Salvar" class="btn btn-success" />
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

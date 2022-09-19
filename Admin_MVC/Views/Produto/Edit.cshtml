@@ -1,0 +1,65 @@
+﻿@using Admin_MVC.Business.Dtos;
+@model ProdutoDto;
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar Produto</h1>
+
+<hr />
+<form asp-action="Edit" enctype="multipart/form-data">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row p-1">
+        <div class="form-group">
+            <label asp-for="IdUsuario" class="control-label">Usuário</label>
+            <input asp-for="IdUsuario" class="form-control" value="@Model.IdUsuario" readonly />
+            <span asp-validation-for="IdUsuario" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Nome" class="control-label"></label>
+            <input asp-for="Nome" class="form-control" />
+            <span asp-validation-for="Nome" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="idCategoria" class="control-label">Categoria</label>
+            <select asp-for="idCategoria" class="form-control" asp-items="@ViewBag.Categorias">
+                <option value="">Selecione</option>
+            </select>
+            <span asp-validation-for="idCategoria" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Valor" class="control-label"></label>
+            <input asp-for="Valor" class="form-control" />
+            <span asp-validation-for="Valor" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="linkShoppe" class="control-label">Link da Shopee</label>
+            <input asp-for="linkShoppe" class="form-control" />
+            <span asp-validation-for="linkShoppe" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="FotoPrimaria" class="control-label">Foto Primária</label>
+            <input asp-for="FotoPrimaria" class="form-control" type="file"/>
+            <span asp-validation-for="FotoPrimaria" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="FotoSecundaria" class="control-label">Foto Secundária</label>
+            <input asp-for="FotoSecundaria" class="form-control" type="file"/>
+            <span asp-validation-for="FotoSecundaria" class="text-danger"></span>
+        </div>
+    </div>
+   <div class="row p-3">
+        <hr/>
+    </div>
+    <div class="row p-1">
+        <div class="form-group col">
+            <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+            <input type="submit" value="Salvar" class="btn btn-success" />
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

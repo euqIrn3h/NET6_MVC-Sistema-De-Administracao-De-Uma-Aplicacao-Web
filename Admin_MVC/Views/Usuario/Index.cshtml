@@ -1,0 +1,55 @@
+@model IEnumerable<Admin_MVC.Models.UsuarioData>
+@using Admin_MVC.Business.Enums;
+
+@{
+    ViewData["Title"] = "Usuários";
+    var nivel = NivelAcessoEnum.Artista;
+}
+
+<h1>Usuários</h1>
+
+<p>
+    <a class="btn btn-success" asp-action="Create" method="get">Cadastrar Usuário</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NivelAcesso)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @foreach (int i in Enum.GetValues(typeof(NivelAcessoEnum)))
+                {
+                    if (i == item.NivelAcesso)
+                    {
+                        nivel = (NivelAcessoEnum)item.NivelAcesso;               
+                    }
+                }
+                @Html.DisplayFor(modelItem => nivel)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Editar</a>
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Apagar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

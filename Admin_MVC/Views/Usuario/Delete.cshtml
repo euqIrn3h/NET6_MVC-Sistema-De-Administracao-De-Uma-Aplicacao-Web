@@ -1,0 +1,50 @@
+@model Admin_MVC.Models.UsuarioData
+@using Admin_MVC.Business.Enums;
+@{
+    ViewData["Title"] = "Apagar";
+    var nivel = NivelAcessoEnum.Artista;
+}
+
+<h1>Apagar</h1>
+
+<div>
+    <h4>Usuário</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NivelAcesso)
+        </dt>
+        <dd class = "col-sm-10">
+            @foreach (int i in Enum.GetValues(typeof(NivelAcessoEnum)))
+            {
+                if (i == Model.NivelAcesso)
+                {
+                    nivel = (NivelAcessoEnum)Model.NivelAcesso;               
+                }
+            }
+            @Html.DisplayFor(model => nivel)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="row p-1">
+            <div class="form-group col">
+                <input type="hidden" asp-for="Id" />
+                <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+                <input type="submit" value="Delete" class="btn btn-danger" />
+            </div>
+        </div>
+    </form>
+</div>

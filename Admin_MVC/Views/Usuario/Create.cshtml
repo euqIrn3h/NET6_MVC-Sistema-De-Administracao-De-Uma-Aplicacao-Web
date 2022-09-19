@@ -1,0 +1,57 @@
+@model Admin_MVC.Business.Dtos.UsuarioDto
+
+@{
+    ViewData["Title"] = "Cadastrar Usuário";
+    var NiveisAcesso = Enum.GetValues(typeof(Admin_MVC.Business.Enums.NivelAcessoEnum));
+}
+
+<h2>Cadastrar Usuário</h2>
+
+<hr />
+<form asp-action="Create">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row p-1">
+        <div class="form-group">
+            <label asp-for="Email" class="control-label"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group ">
+            <label asp-for="Senha" class="control-label"></label>
+            <input asp-for="Senha" class="form-control" type="password"/>
+            <span asp-validation-for="Senha" class="text-danger"></span>
+        </div>
+        <div class="form-group ">
+            <label asp-for="Nome" class="control-label"></label>
+            <input asp-for="Nome" class="form-control" />
+            <span asp-validation-for="Nome" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="NivelAcesso" class="control-label">Nível de Acesso</label>
+            <select asp-for="NivelAcesso" class="form-control">
+                @foreach (var nivel in NiveisAcesso)
+                {
+                    var valor = (int)nivel;
+                    <option value="@valor">@nivel</option>
+                }
+            </select>
+            <span asp-validation-for="NivelAcesso" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row p-3">
+        <hr/>
+    </div>
+    <div class="row p-1">
+        <div class="form-group col">
+            <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+            <input type="submit" value="Salvar" class="btn btn-success" />
+        </div>
+    </div>
+</form>
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
