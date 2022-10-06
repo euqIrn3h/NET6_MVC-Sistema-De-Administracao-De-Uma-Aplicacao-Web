@@ -34,6 +34,29 @@ namespace Admin_MVC.Migrations
                     b.ToTable("Categorias");
                 });
 
+            modelBuilder.Entity("Admin_MVC.Models.ImagemData", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("PathCarroselPrimario")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("PathLogo")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("PathLogoSecundario")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Imagens");
+                });
+
             modelBuilder.Entity("Admin_MVC.Models.ProdutoData", b =>
                 {
                     b.Property<int>("Id")

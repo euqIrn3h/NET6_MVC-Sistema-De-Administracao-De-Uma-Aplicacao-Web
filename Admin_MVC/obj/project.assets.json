@@ -10355,11 +10355,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\henri\\OneDrive\\Documentos\\Programas\\TrabalhoF\\Empoderadas\\Gerenciamento_MVC\\Empoderadas_MVC\\Admin_MVC\\Admin_MVC.csproj",
+      "projectUniqueName": "C:\\Users\\henri\\OneDrive\\Documentos\\Programas\\.NET\\ProjetosF\\Empoderadas\\NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web\\admin_mvc\\Admin_MVC.csproj",
       "projectName": "Admin_MVC",
-      "projectPath": "C:\\Users\\henri\\OneDrive\\Documentos\\Programas\\TrabalhoF\\Empoderadas\\Gerenciamento_MVC\\Empoderadas_MVC\\Admin_MVC\\Admin_MVC.csproj",
+      "projectPath": "C:\\Users\\henri\\OneDrive\\Documentos\\Programas\\.NET\\ProjetosF\\Empoderadas\\NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web\\admin_mvc\\Admin_MVC.csproj",
       "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\henri\\OneDrive\\Documentos\\Programas\\TrabalhoF\\Empoderadas\\Gerenciamento_MVC\\Empoderadas_MVC\\Admin_MVC\\obj\\",
+      "outputPath": "C:\\Users\\henri\\OneDrive\\Documentos\\Programas\\.NET\\ProjetosF\\Empoderadas\\NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web\\admin_mvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -73,7 +73,7 @@ namespace Admin_MVC.Controllers
                         await dadosDoUsuarioDto.FotoPerfil.CopyToAsync(fileStream);
                     }
 
-                    usuarioData.PathFotoPerfil = "http://empoderadas.softadworks.com/admin/images/" + fileName;
+                    usuarioData.PathFotoPerfil = "https://empoderadas.softadworks.com/admin/images/" + fileName;
 
                     _context.Update(usuarioData);
                     await _context.SaveChangesAsync();

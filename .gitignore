@@ -1,1 +1,6 @@
 /Admin_MVC/Deploy
+/Admin_MVC/bin
+/Admin_MVC/Env
+/Admin_MVC/Migrations
+/Admin_MVC/obj
+/Admin_MVC/Properties

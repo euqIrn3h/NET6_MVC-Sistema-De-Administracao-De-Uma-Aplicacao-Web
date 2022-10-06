@@ -215,22 +215,38 @@ namespace Admin_MVC.Controllers
         public IActionResult GetSobre()
         {
             var termo = _context.Termos.Find(1).Sobre;
-            return Ok(termo);
+            return Json(termo);
         }
 
         [HttpGet]
         public IActionResult GetTermosUso()
         {
             var termo = _context.Termos.Find(1).TermosDeUso;
-            return Ok(termo);
+            return Json(termo);
         }
 
         [HttpGet]
         public IActionResult GetPrivacidade()
         {
             var termo = _context.Termos.Find(1).TermosDePrivacidade;
-            return Ok(termo);
+            return Json(termo);
         }
 
+        [HttpGet]
+        public IActionResult GetLogo()
+        {
+            return Ok( _context.Imagens.Find(1).PathLogo);
+        }
+
+        [HttpGet]
+        public IActionResult GetCarrossel()
+        {
+            List<string> lista = new List<string>
+            {
+                _context.Imagens.Find(1).PathCarroselPrimario,
+                _context.Imagens.Find(1).PathLogoSecundario
+            };
+            return Ok( lista);
+        }
     }
 }

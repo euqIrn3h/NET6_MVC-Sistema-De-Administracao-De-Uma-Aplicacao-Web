@@ -17,5 +17,6 @@ namespace Admin_MVC.Data
         public DbSet<ProdutoData>? Produtos { get; set; }
         public DbSet<CategoriaData>? Categorias { get; set; }
         public DbSet<TermoData>? Termos { get; set; }
+        public DbSet<ImagemData>? Imagens { get; set; }
     }
 }

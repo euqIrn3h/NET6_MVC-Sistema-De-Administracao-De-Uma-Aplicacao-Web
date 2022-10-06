@@ -1,0 +1,47 @@
+@model Admin_MVC.Business.Dtos.ImagemDto;
+
+@{
+    ViewData["Title"] = "Editar";
+
+}
+
+<h1>Editar Imagens</h1>
+
+<hr />
+
+<form asp-action="Edit" ENCTYPE="Multipart/Form-Data">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row p-1">
+        <div class="form-group">
+            <input asp-for="Id" type="hidden"/>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.PathLogo" class="control-label">Empoderadas Logo</label>
+            <input asp-for="@Model.PathLogo" class="form-control" type="file"/>
+            <span asp-validation-for="@Model.PathLogo" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.PathCarroselPrimario" class="control-label">Empoderadas Logo</label>
+            <input asp-for="@Model.PathCarroselPrimario" class="form-control" type="file"/>
+            <span asp-validation-for="@Model.PathCarroselPrimario" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.PathLogoSecundario" class="control-label">Empoderadas Logo</label>
+            <input asp-for="@Model.PathLogoSecundario" class="form-control" type="file"/>
+            <span asp-validation-for="@Model.PathLogoSecundario" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row p-3">
+        <hr/>
+    </div>
+    <div class="row p-1">
+        <div class="form-group col">
+            <a asp-action="Index" asp-controller="Home" class="btn btn-secondary">Voltar</a>
+            <input type="submit" value="Salvar" class="btn btn-success" />
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

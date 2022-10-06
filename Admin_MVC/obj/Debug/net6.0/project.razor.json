@@ -16318,6 +16318,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\henri\\OneDrive\\Documentos\\Programas\\.NET\\ProjetosF\\Empoderadas\\NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web\\Admin_MVC\\Views\\Imagem\\Edit.cshtml",
+      "TargetPath": "Views\\Imagem\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\henri\\OneDrive\\Documentos\\Programas\\.NET\\ProjetosF\\Empoderadas\\NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web\\Admin_MVC\\Views\\Usuario\\Create.cshtml",
       "TargetPath": "Views\\Usuario\\Create.cshtml",
       "FileKind": "mvc"

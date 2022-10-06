@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I4fQGc7c4t68Y4u1UzPS6VFZ01e8lzCogtjHwu1UxQW1lBSmQnz9p5YDtsRTzlgTGK7BvR9vM48LEwGiszDc/A==",
+  "dgSpecHash": "Gr+dK22AyAB1rwqzhld6/3S/7JHXircf1YvflfrQ4LmDRcGmkgiwRdtzV6D4uZJKw1olmTe2zDP6YEXcHWzclA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\henri\\OneDrive\\Documentos\\Programas\\TrabalhoF\\Empoderadas\\Gerenciamento_MVC\\Empoderadas_MVC\\Admin_MVC\\Admin_MVC.csproj",
+  "projectFilePath": "C:\\Users\\henri\\OneDrive\\Documentos\\Programas\\.NET\\ProjetosF\\Empoderadas\\NET6_MVC-Sistema-De-Administracao-De-Uma-Aplicacao-Web\\admin_mvc\\Admin_MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\henri\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

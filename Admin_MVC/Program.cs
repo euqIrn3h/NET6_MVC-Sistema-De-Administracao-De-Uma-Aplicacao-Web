@@ -1,10 +1,12 @@
 using Admin_MVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Admin_MVC.Profiles;
+using Admin_MVC.Env;
 
 var builder = WebApplication.CreateBuilder(args);
-var connect = builder.Configuration.GetConnectionString("ProductionDbString");
 
+Env.Variaveis();
+var connect = Environment.GetEnvironmentVariable("CONNECTION");
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DataContext>(options => options.UseMySql(connect, ServerVersion.AutoDetect(connect)));
@@ -28,7 +30,7 @@ app.UseCors(policy =>
             .AllowAnyMethod()
             );
 
-// Verifica Permissões
+// Verifica Permissï¿½es
 app.UseAuthorization();
 
 app.MapControllerRoute(

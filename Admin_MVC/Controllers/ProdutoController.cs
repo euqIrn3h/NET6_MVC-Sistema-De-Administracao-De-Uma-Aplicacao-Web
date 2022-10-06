@@ -109,8 +109,8 @@ namespace Admin_MVC.Controllers
                     idCategoria = produtoDto.idCategoria,
                     Valor = Convert.ToDecimal(produtoDto.Valor),
                     linkShoppe = produtoDto.linkShoppe,
-                    PathFotoPrimaria = "http://empoderadas.softadworks.com/admin/images/" + fileNamePrimario,
-                    PathFotoSecundaria = "http://empoderadas.softadworks.com/admin/images/" + fileNameSecundario
+                    PathFotoPrimaria = "https://empoderadas.softadworks.com/admin/images/" + fileNamePrimario,
+                    PathFotoSecundaria = "https://empoderadas.softadworks.com/admin/images/" + fileNameSecundario
                 };
 
                 _context.Produtos.Add(produto);
@@ -195,8 +195,8 @@ namespace Admin_MVC.Controllers
                         idCategoria = produtoDto.idCategoria,
                         Valor = Convert.ToDecimal(produtoDto.Valor),
                         linkShoppe = produtoDto.linkShoppe,
-                        PathFotoPrimaria = "http://empoderadas.softadworks.com/admin/images/" + fileNamePrimario,
-                        PathFotoSecundaria = "http://empoderadas.softadworks.com/admin/images/" + fileNameSecundario
+                        PathFotoPrimaria = "https://empoderadas.softadworks.com/admin/images/" + fileNamePrimario,
+                        PathFotoSecundaria = "https://empoderadas.softadworks.com/admin/images/" + fileNameSecundario
                     };
 
                     _context.Update(produto);
